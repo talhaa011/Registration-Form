@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="php.php">
+    </head>
+<body>
+
+    <div class="container">
+        <h2>Registation Form</h2>
+        <form action="submit.php" method="post" enctype="multipart/form-data"></form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" name="name" required>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" placeholder="Father name" id="father_name" name="father_name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" placeholder="Gender" name="gender" required>
+                <option value="">Select...</option> 
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="E-mail" id="email" name="email" required>
+
+            <label for="date of birth">Date of Birth:</label>
+            <input type="date" id="DOB" placeholder="DOB" name="DOB" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="age" name="age" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="address" rows="4" required></textarea>
+
+            <label for="contact_no">Contact Number:</label>
+            <input type="tel" id="contact_no" placeholder="content no" name="contact_no" required>
+
+            <label for="project">Project Select:</label>
+            <select id="project" name="project" required>
+                <option value="">Select...</option> 
+                <option value="Web Development">Web Development</option>
+                <option value="App Development">App Development</option>
+                <option value="Digital marketing">Digital marketing</option>
+                <option value="SEO">SEO</option>
+
+            </select>
+
+            <label for="file">File Attachment:</label>
+            <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
